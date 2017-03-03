@@ -4,7 +4,7 @@ var request = require('request');
 exports.handler = function(event, context) {
     
     var url = "http://openapi.airkorea.or.kr/openapi/services/rest/ArpltnInforInqireSvc/getMsrstnAcctoRltmMesureDnsty";
-    var queryParams  = '?' + encodeURIComponent('ServiceKey')   + '=' + '${ServiceKey}'; // Service Key
+    var queryParams  = '?' + encodeURIComponent('ServiceKey')   + '=' + '${service_key}'; // Service Key
     	queryParams += '&' + encodeURIComponent('stationName')  + '=' + encodeURIComponent('성북구');   // 측정소
     	queryParams += '&' + encodeURIComponent('dataTerm')     + '=' + encodeURIComponent('month');    // 데이터
     	queryParams += '&' + encodeURIComponent('pageNo')       + '=' + encodeURIComponent('1');        // 페이지 수
