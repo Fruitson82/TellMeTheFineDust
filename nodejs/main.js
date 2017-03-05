@@ -28,7 +28,7 @@ exports.handler = function(event, context) {
     	}else if(event.content == "가족소개") {
     	    returnJson = {"message": {"text": "멋진 우리 가족입니다", "photo": {"url": getRandomImage(), "width": 640, "height": 450}}, "keyboard": {"type": "buttons", "buttons": buttonArr}};
     	}else {
-    	    returnJson = {"message": {"photo": {"url": "${image_url}", "width": 640, "height": 450}, "message_button": {"label": "Let's go github...", "url": "https://github.com/Fruitson82/KakaoYellowIDByFruitson"}}, "keyboard": {"type": "buttons", "buttons": buttonArr}};
+    	    returnJson = {"message": {"photo": {"url": "${image_url}", "width": 640, "height": 450}, "message_button": {"label": "Let's go github...", "url": "https://github.com/Fruitson82/TellMeTheFineDust"}}, "keyboard": {"type": "buttons", "buttons": buttonArr}};
     	}
         context.succeed(returnJson);
         
